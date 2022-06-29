@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <section class="header mb-3">
+        <header class="header pt-4">
+            <div class="header__top ">
+                <div class="container">
+                    <nav class="flex row justify-content-between align-items-center">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-end d-md-none pt-3">
+                                <a class="burger__menu" id="burgerButton"></a>
+                            </div>
+                            <ul class="navLinks d-md-flex flex-md-row flex-column justify-content-end text-right alight-items-end align-items-md-center h-100 pt-1">
+                                <li class="pr-4">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="pr-2 text-right text-md-center header__info fontLato"><img src="img/telephone.svg" alt=""> +1 234 567 89 10</a>
+                                        <a href="#" class="pr-2 header__info fontLato"><img src="img/mail.svg" alt=""> example@mail.ru
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="pr-2">
+                                    <a href="#" class="header__img"><img src="img/whatsup.svg" alt="" class="header__img-show">
+                                        <img src="img/whatsup-hover.svg" alt="" class="header__img-hide"></a>
+                                </li>
+                                <li class="pr-2">
+                                    <a href="#" class="header__img"><img src="img/telegram.svg" alt="" class="header__img-show">
+                                        <img src="img/telegram-hover.svg" alt="" class="header__img-hide"></a>
+                                </li>
+                                <li class="pr-4">
+                                    <a href="#" class="header__img"><img src="img/viber.svg" alt="" class="header__img-show">
+                                        <img src="img/viber-hover.svg" alt="" class="header__img-hide"></a>
+                                </li>
+                                <li class="header__btn"><a href="#" data-toggle="modal" data-target="#exampleModal">СВЯЗАТЬСЯ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__content">
+                <nav>
+                    <div class="container h-100">
+                        <ul class="d-flex flex-column flex-md-row justify-content-between align-items-center h-100 p-3 fontLato">
+                            <li>
+                                <a href="#">Оборудование новое</a>
+                            </li>
+                            <li>
+                                <a href="#">Оборудование Б/У</a>
+                            </li>
+                            <li>
+                                <a href="#">Комплектующие прессов ММО</a>
+                            </li>
+                            <li>
+                                <a href="#">Комплектующие упаковочных машин</a>
+                            </li>
+                            <li>
+                                <a href="#">Изготовление деталей</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="slider mb-5">
+        <div class="container">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img class="d-block w-100" src="img/slider-background.png">
+                        <h1 class="fontGeometric706">ЗАГОЛОВОК СЛАЙДА</h1>
+                        <button class="fontLato">ПОДРОБНЕЕ</button>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider-background.png">
+                        <h1 class="fontGeometric706">ЗАГОЛОВОК СЛАЙДА</h1>
+                        <button class="fontLato">ПОДРОБНЕЕ</button>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider-background.png">
+                        <h1 class="fontGeometric706">ЗАГОЛОВОК СЛАЙДА</h1>
+                        <button class="fontLato">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="news mb-5">
+        <div class="container">
+            <h2 class="title pb-2 mb-4 fontGeometric706">
+                НОВИНКИ
+            </h2>
+            <div class="row justify-content-center">
+                <div class="d-flex flex-column flex-md-row justify-content-lg-center align-items-center justify-content-between  col-lg-12 col-xl-6">
+                    <div class="card col-5 mr-md-5">
+                        <div class="card__border"></div>
+                        <img src="img/card-photo.png" class="card-img-top pt-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center fontLato">Наименование товара | Услуга</p>
+                        </div>
+                    </div>
+                    <div class="card col-5  ">
+                        <div class="card__border"></div>
+                        <img src="img/card-photo.png" class="card-img-top pt-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center fontLato">Наименование товара | Услуга</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-lg-center align-items-center justify-content-between col-lg-12 col-xl-6 mt-2 mt-xl-0">
+                    <div class="card col-5  mr-md-5">
+                        <div class="card__border"></div>
+                        <img src="img/card-photo.png" class="card-img-top pt-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center fontLato">Наименование товара | Услуга</p>
+                        </div>
+                    </div>
+                    <div class="card col-5 ">
+                        <div class=" card__border "></div>
+                        <img src="img/card-photo.png " class="card-img-top pt-3 " alt="... ">
+                        <div class="card-body ">
+                            <p class="card-text text-center fontLato">Наименование товара | Услуга</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories mb-5">
+        <div class="container">
+            <h2 class="title pb-2 mb-4 fontGeometric706">
+                КАТЕГОРИИ
+            </h2>
+            <div class="d-flex flex-column flex-xl-row">
+                <div class="milestone col-lg-4 d-flex justify-content-start align-items-center mb-2 pl-0 mr-4">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            ОБОРУДОВАНИЕ НОВОЕ
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone col-lg-4 d-flex  justify-content-start align-items-center mb-2 pl-0 mr-4">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            ОБОРУДОВАНИЕ Б/У
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone col-lg-4 d-flex justify-content-start align-items-center mb-2 pl-0">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            ЗАПАСНЫЕ ЧАСТИ
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-xl-row">
+                <div class="milestone col-lg-4 d-flex justify-content-start align-items-center mb-2 pl-0 mr-4">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            ИЗГОТОВЛЕНИЕ
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone col-lg-4 d-flex  justify-content-start align-items-center mb-2 pl-0 mr-4">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            РЕМОНТ КОМПЛЕКТУЮЩИХ ДЛЯ ПРЕССОВ МОМ
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+                <div class="milestone col-lg-4 d-flex  justify-content-start align-items-center mb-2 pl-0">
+                    <div class="pr-4">
+                        <img src="img/categories-photo.png" alt="" class="milestone__img">
+                        <img src="img/categories-photo-hover.png" alt="" class="milestone__img-hide">
+                    </div>
+                    <div class="text-left d-flex flex-column justify-content-around h-100">
+                        <img src="img/m-icon.svg" alt="" width="28px">
+                        <h5 class="milestone__title fontGeometric706">
+                            НИШИ ПРОИЗВОДСТВА
+                        </h5>
+                        <p class="milestone__subtitle mb-0 fontLato">
+                            СМОТРЕТЬ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <div class="footer__top pb-4">
+                <div class="container">
+                    <nav class="flex row justify-content-between">
+                        <div class="footer__logo d-flex flex-column">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__subtitle">
+                            2021 © SiteName.com. Все права защищены
+                        </a>
+                        </div>
+
+                        <div class="">
+                            <ul class="d-md-flex flex-md-row flex-column justify-content-md-end text-md-right alight-items-md-end align-items-md-center h-md-100 pt-md-1 mb-md-0">
+                                <li class="pr-4">
+                                    <div class="d-flex flex-column pr-3 footer__info">
+                                        <a href="#" class="pr-2 text-md-center fontLato"><img src="img/telephone.svg" alt=""> +1 234 567 89 10</a>
+                                        <a href="#" class="pr-2 fontLato"><img src="img/mail.svg" alt=""> example@mail.ru
+                                        </a>
+                                        <div class="pt-3 d-flex flex-md-column footer__subinfo" style="z-index:1;">
+                                            <a href="#" class="pr-2 pr-md-0">Адрес</a>
+                                            <a href="#" class="pr-2 pr-md-0">Адрес</a>
+                                            <a href="#">Реквизиты</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <div class="d-flex flex-md-row flex-column align-items-start h-md-100">
+                                    <div class="d-flex flex-row">
+                                        <li class="pr-4 pt-3">
+                                            <a href="#"><img src="img/whatsup.svg" alt=""></a>
+                                        </li>
+                                        <li class="pr-4 pt-3">
+                                            <a href="#"><img src="img/telegram.svg" alt=""></a>
+                                        </li>
+                                        <li class="pr-4 pt-3">
+                                            <a href="#"><img src="img/viber.svg" alt=""></a>
+                                        </li>
+                                    </div>
+                                    <li class="header__btn "><a href="#" data-toggle="modal" data-target="#exampleModal">СВЯЗАТЬСЯ</a></li>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title fontLato" id="exampleModalLabel">ОБРАТНАЯ СВЯЗЬ</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><img src="img/close.svg" alt=""></span>
+                                              </button>
+                                                </div>
+                                                <form>
+                                                    <div class="modal-body">
+                                                        <div class="d-flex flex-column justify-content-between pb-2 flex-lg-row">
+                                                            <input type="text" placeholder="Имя">
+                                                            <input type="tel" id="requestTel" placeholder="Номер телефона" class="mt-2 mt-lg-0">
+                                                            <input type="email" id="requestEmail" placeholder="E-mail" class="mt-2 mt-lg-0">
+                                                        </div>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Имя" class="w-100"></textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="header__btn " data-dismiss="modal">ОТПРАВИТЬ</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#requestTel').mask('+38(000)000-00-00');
+        });
+    </script>
+</body>
+
+</html>
